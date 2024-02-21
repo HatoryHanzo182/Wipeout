@@ -3,12 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace Sample {
 public class GhostScript : MonoBehaviour
 {
     private Animator Anim;
     private CharacterController Ctrl;
     private Vector3 MoveDirection = Vector3.zero;
+    private bool isJumping = false;
+    private float jumpForce = 8.0f;
+    private float gravity = 30.0f;
     // Cache hash values
     private static readonly int IdleState = Animator.StringToHash("Base Layer.idle");
     private static readonly int MoveState = Animator.StringToHash("Base Layer.move");
@@ -24,28 +26,26 @@ public class GhostScript : MonoBehaviour
     private int HP = maxHP;
     private Text HP_text;
 
-    // moving speed
-    [SerializeField] private float Speed = 4;
+    // moving speed 
+    [SerializeField] private float Speed;
 
     void Start()
     {
         Anim = this.GetComponent<Animator>();
-        Ctrl = this.GetComponent<CharacterController>();
-        HP_text = GameObject.Find("Canvas/HP").GetComponent<Text>();
-        HP_text.text = "HP " + HP.ToString();
+        Ctrl = GetComponent<CharacterController>();
     }
 
     void Update()
     {
         STATUS();
         GRAVITY();
-        Respawn();
         // this character status
         if(!PlayerStatus.ContainsValue( true ))
         {
             MOVE();
             PlayerAttack();
-            Damage();
+            HandleJumpInput();
+            CheckJumpLand();
         }
         else if(PlayerStatus.ContainsValue( true ))
         {
@@ -64,7 +64,7 @@ public class GhostScript : MonoBehaviour
             }
             else if(status_name == Attack)
             {
-                PlayerAttack();
+                // PlayerAttack();
             }
             else if(status_name == Surprised)
             {
@@ -109,16 +109,16 @@ public class GhostScript : MonoBehaviour
             PlayerStatus[Dissolve] = false;
         }
         // during attacking
-        if(Anim.GetCurrentAnimatorStateInfo(0).tagHash == AttackTag)
+        if (Anim.GetCurrentAnimatorStateInfo(0).tagHash == AttackTag)
         {
             PlayerStatus[Attack] = true;
         }
-        else if(Anim.GetCurrentAnimatorStateInfo(0).tagHash != AttackTag)
+        else if (Anim.GetCurrentAnimatorStateInfo(0).tagHash != AttackTag)
         {
             PlayerStatus[Attack] = false;
         }
         // during damaging
-        if(Anim.GetCurrentAnimatorStateInfo(0).fullPathHash == SurprisedState)
+        if (Anim.GetCurrentAnimatorStateInfo(0).fullPathHash == SurprisedState)
         {
             PlayerStatus[Surprised] = true;
         }
@@ -141,31 +141,35 @@ public class GhostScript : MonoBehaviour
         }
     }
     // play a animation of Attack
-    private void PlayerAttack ()
+    private void PlayerAttack()
     {
-        if(Input.GetKeyDown(KeyCode.A))
+        if (Input.GetMouseButtonDown(0))
         {
-            Anim.CrossFade(AttackState,0.1f,0,0);
+            Anim.CrossFade(AttackState, 0.1f, 0, 0);
         }
     }
     //---------------------------------------------------------------------
     // gravity for fall of this character
     //---------------------------------------------------------------------
-    private void GRAVITY ()
+    private void GRAVITY()
     {
-        if(Ctrl.enabled)
+        if (Ctrl.enabled)
         {
-            if(CheckGrounded())
+            if (!isJumping && CheckGrounded())
             {
-                if(MoveDirection.y < -0.1f)
+                if (MoveDirection.y < -0.1f)
                 {
                     MoveDirection.y = -0.1f;
                 }
             }
-            MoveDirection.y -= 0.1f;
+            if (!isJumping)
+            {
+                MoveDirection.y -= gravity * Time.deltaTime;
+            }
             Ctrl.Move(MoveDirection * Time.deltaTime);
         }
     }
+
     //---------------------------------------------------------------------
     // whether it is grounded
     //---------------------------------------------------------------------
@@ -182,45 +186,49 @@ public class GhostScript : MonoBehaviour
     //---------------------------------------------------------------------
     // for slime moving
     //---------------------------------------------------------------------
-    private void MOVE ()
+    private void MOVE()
     {
-        // velocity
-        if(Anim.GetCurrentAnimatorStateInfo(0).fullPathHash == MoveState)
+        float horizontalInput = Input.GetAxis("Horizontal");
+        float verticalInput = Input.GetAxis("Vertical");
+
+        Vector3 cameraForward = Camera.main.transform.forward;
+        Vector3 cameraRight = Camera.main.transform.right;
+
+        cameraForward.y = 0f;
+        cameraRight.y = 0f;
+
+        cameraForward.Normalize();
+        cameraRight.Normalize();
+
+        Vector3 moveDirection = (horizontalInput * cameraRight + verticalInput * cameraForward).normalized;
+
+        if (moveDirection != Vector3.zero)
         {
-            if (Input.GetKey(KeyCode.UpArrow) && !Input.GetKey(KeyCode.DownArrow) && !Input.GetKey(KeyCode.LeftArrow) && !Input.GetKey(KeyCode.RightArrow))
-            {
-                MOVE_Velocity(new Vector3(0, 0, -Speed), new Vector3(0, 180, 0));
-            }
-            else if (Input.GetKey(KeyCode.DownArrow) && !Input.GetKey(KeyCode.UpArrow) && !Input.GetKey(KeyCode.LeftArrow) && !Input.GetKey(KeyCode.RightArrow))
-            {
-                MOVE_Velocity(new Vector3(0, 0, Speed), new Vector3(0, 0, 0));
-            }
-            else if (Input.GetKey(KeyCode.LeftArrow) && !Input.GetKey(KeyCode.UpArrow) && !Input.GetKey(KeyCode.DownArrow) && !Input.GetKey(KeyCode.RightArrow))
-            {
-                MOVE_Velocity(new Vector3(Speed, 0, 0), new Vector3(0, 90, 0));
-            }
-            else if (Input.GetKey(KeyCode.RightArrow) && !Input.GetKey(KeyCode.UpArrow) && !Input.GetKey(KeyCode.DownArrow) && !Input.GetKey(KeyCode.LeftArrow))
-            {
-                MOVE_Velocity(new Vector3(-Speed, 0, 0), new Vector3(0, 270, 0));
-            }
+            Quaternion toRotation = Quaternion.LookRotation(moveDirection, Vector3.up);
+            transform.rotation = Quaternion.Lerp(transform.rotation, toRotation, Time.deltaTime * 10f);
         }
+
+        MOVE_Velocity(Speed * moveDirection, moveDirection);
         KEY_DOWN();
         KEY_UP();
     }
+
+
     //---------------------------------------------------------------------
     // value for moving
     //---------------------------------------------------------------------
-    private void MOVE_Velocity (Vector3 velocity, Vector3 rot)
+    private void MOVE_Velocity(Vector3 velocity, Vector3 moveDirection)
     {
-        MoveDirection = new Vector3 (velocity.x, MoveDirection.y, velocity.z);
-        if(Ctrl.enabled)
+        MoveDirection = new Vector3(velocity.x, MoveDirection.y, velocity.z);
+        if (Ctrl.enabled)
         {
             Ctrl.Move(MoveDirection * Time.deltaTime);
         }
         MoveDirection.x = 0;
         MoveDirection.z = 0;
-        this.transform.rotation = Quaternion.Euler(rot);
+        // this.transform.rotation = Quaternion.LookRotation(moveDirection);
     }
+
     //---------------------------------------------------------------------
     // whether arrow key is key down
     //---------------------------------------------------------------------
@@ -228,6 +236,7 @@ public class GhostScript : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.UpArrow))
         {
+            Debug.Log("Key Down Detected");
             Anim.CrossFade(MoveState, 0.1f, 0, 0);
         }
         else if (Input.GetKeyDown(KeyCode.DownArrow))
@@ -240,6 +249,11 @@ public class GhostScript : MonoBehaviour
         }
         else if (Input.GetKeyDown(KeyCode.RightArrow))
         {
+            Anim.CrossFade(MoveState, 0.1f, 0, 0);
+        }
+        else if (Input.GetKeyDown(KeyCode.LeftShift))
+        {
+            Speed += 20f;
             Anim.CrossFade(MoveState, 0.1f, 0, 0);
         }
     }
@@ -276,44 +290,32 @@ public class GhostScript : MonoBehaviour
                 Anim.CrossFade(IdleState, 0.1f, 0, 0);
             }
         }
-    }
-    //---------------------------------------------------------------------
-    // damage
-    //---------------------------------------------------------------------
-    private void Damage ()
-    {
-        // Damaged by outside field.
-        if(Input.GetKeyUp(KeyCode.S))
+        else if (Input.GetKeyUp(KeyCode.LeftShift))
         {
-            Anim.CrossFade(SurprisedState, 0.1f, 0, 0);
-            HP--;
-            HP_text.text = "HP " + HP.ToString();
-        }
-    }
-    //---------------------------------------------------------------------
-    // respawn
-    //---------------------------------------------------------------------
-    private void Respawn ()
-    {
-        if(Input.GetKeyDown(KeyCode.Space))
-        {
-            // player HP
-            HP = maxHP;
-            
-            Ctrl.enabled = false;
-            this.transform.position = Vector3.zero; // player position
-            this.transform.rotation = Quaternion.Euler(Vector3.zero); // player facing
-            Ctrl.enabled = true;
-            
-            // reset Dissolve
-            Dissolve_value = 1;
-            for(int i = 0; i < MeshR.Length; i++)
+            if (!Input.GetKey(KeyCode.UpArrow) && !Input.GetKey(KeyCode.DownArrow) && !Input.GetKey(KeyCode.LeftArrow))
             {
-                MeshR[i].material.SetFloat("_Dissolve", Dissolve_value);
+                Speed -= 20f;
+                Anim.CrossFade(IdleState, 0.1f, 0, 0);
             }
-            // reset animation
-            Anim.CrossFade(IdleState, 0.1f, 0, 0);
         }
     }
-}
+
+    private void HandleJumpInput()
+    {
+        if (Input.GetButtonDown("Jump") && CheckGrounded())
+        {
+            Debug.Log("Jumping!");
+            isJumping = true;
+            MoveDirection.y = Mathf.Sqrt(2.0f * jumpForce * gravity);
+            Anim.CrossFade(SurprisedState, 0.1f, 0, 0);
+        }
+    }
+
+    private void CheckJumpLand()
+    {
+        if (isJumping && CheckGrounded())
+        {
+            isJumping = false;
+        }
+    }
 }

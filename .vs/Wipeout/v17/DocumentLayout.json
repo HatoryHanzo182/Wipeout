@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\My resources\\Work\\Unity\\Wipeout\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{ABDCA02B-FB7E-C490-F7B2-F4A61B54B52D}|Assembly-CSharp.csproj|c:\\my resources\\work\\unity\\wipeout\\assets\\scripts\\camerascript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ABDCA02B-FB7E-C490-F7B2-F4A61B54B52D}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\camerascript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{ABDCA02B-FB7E-C490-F7B2-F4A61B54B52D}|Assembly-CSharp.csproj|c:\\my resources\\work\\unity\\wipeout\\assets\\ghostcharacter_free\\scripts\\ghostscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ABDCA02B-FB7E-C490-F7B2-F4A61B54B52D}|Assembly-CSharp.csproj|solutionrelative:assets\\ghostcharacter_free\\scripts\\ghostscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{ABDCA02B-FB7E-C490-F7B2-F4A61B54B52D}|Assembly-CSharp.csproj|c:\\my resources\\work\\unity\\wipeout\\assets\\scripts\\characterscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ABDCA02B-FB7E-C490-F7B2-F4A61B54B52D}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\characterscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{ABDCA02B-FB7E-C490-F7B2-F4A61B54B52D}|Assembly-CSharp.csproj|C:\\My resources\\Work\\Unity\\Wipeout\\assets\\scripts\\camerascript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ABDCA02B-FB7E-C490-F7B2-F4A61B54B52D}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\camerascript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -23,28 +23,28 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "CharacterScript.cs",
-              "DocumentMoniker": "C:\\My resources\\Work\\Unity\\Wipeout\\Assets\\Scripts\\CharacterScript.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\CharacterScript.cs",
-              "ToolTip": "C:\\My resources\\Work\\Unity\\Wipeout\\Assets\\Scripts\\CharacterScript.cs",
-              "RelativeToolTip": "Assets\\Scripts\\CharacterScript.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAAAAAA",
+              "Title": "CameraScript.cs",
+              "DocumentMoniker": "C:\\My resources\\Work\\Unity\\Wipeout\\Assets\\Scripts\\CameraScript.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\CameraScript.cs",
+              "ToolTip": "C:\\My resources\\Work\\Unity\\Wipeout\\Assets\\Scripts\\CameraScript.cs",
+              "RelativeToolTip": "Assets\\Scripts\\CameraScript.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-18T01:23:59.233Z",
+              "WhenOpened": "2024-02-18T15:22:35.087Z",
               "IsPinned": true,
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "CameraScript.cs",
-              "DocumentMoniker": "C:\\My resources\\Work\\Unity\\Wipeout\\Assets\\Scripts\\CameraScript.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\CameraScript.cs",
-              "ToolTip": "C:\\My resources\\Work\\Unity\\Wipeout\\Assets\\Scripts\\CameraScript.cs",
-              "RelativeToolTip": "Assets\\Scripts\\CameraScript.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAABQAAAAFAAAA",
+              "Title": "GhostScript.cs",
+              "DocumentMoniker": "C:\\My resources\\Work\\Unity\\Wipeout\\Assets\\GhostCharacter_Free\\Scripts\\GhostScript.cs",
+              "RelativeDocumentMoniker": "Assets\\GhostCharacter_Free\\Scripts\\GhostScript.cs",
+              "ToolTip": "C:\\My resources\\Work\\Unity\\Wipeout\\Assets\\GhostCharacter_Free\\Scripts\\GhostScript.cs",
+              "RelativeToolTip": "Assets\\GhostCharacter_Free\\Scripts\\GhostScript.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAAABoAAAAZAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-18T15:22:35.087Z",
+              "WhenOpened": "2024-02-21T18:01:33.785Z",
               "IsPinned": true,
               "EditorCaption": ""
             },
@@ -59,6 +59,14 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
             }
           ]
         },
