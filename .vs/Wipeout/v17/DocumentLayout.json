@@ -3,7 +3,7 @@
   "WorkspaceRootPath": "C:\\My resources\\Work\\Unity\\Wipeout\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{ABDCA02B-FB7E-C490-F7B2-F4A61B54B52D}|Assembly-CSharp.csproj|C:\\My resources\\Work\\Unity\\Wipeout\\assets\\ghostcharacter_free\\scripts\\ghostscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{ABDCA02B-FB7E-C490-F7B2-F4A61B54B52D}|Assembly-CSharp.csproj|c:\\my resources\\work\\unity\\wipeout\\assets\\ghostcharacter_free\\scripts\\ghostscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{ABDCA02B-FB7E-C490-F7B2-F4A61B54B52D}|Assembly-CSharp.csproj|solutionrelative:assets\\ghostcharacter_free\\scripts\\ghostscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -42,7 +42,7 @@
               "RelativeDocumentMoniker": "Assets\\GhostCharacter_Free\\Scripts\\GhostScript.cs",
               "ToolTip": "C:\\My resources\\Work\\Unity\\Wipeout\\Assets\\GhostCharacter_Free\\Scripts\\GhostScript.cs",
               "RelativeToolTip": "Assets\\GhostCharacter_Free\\Scripts\\GhostScript.cs",
-              "ViewState": "AQIAAL0AAAAAAAAAAAAuwMoAAAArAAAA",
+              "ViewState": "AQIAACUAAAAAAAAAAAAAADIAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-02-21T18:01:33.785Z",
               "IsPinned": true,

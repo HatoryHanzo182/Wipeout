@@ -16,7 +16,6 @@ public class GhostScript : MonoBehaviour
     private static readonly int _move_state = Animator.StringToHash("Base Layer.move");
     private static readonly int _surprised_state = Animator.StringToHash("Base Layer.surprised");
     private static readonly int _attack_state = Animator.StringToHash("Base Layer.attack_shift");
-    private static readonly int _attack_tag = Animator.StringToHash("Attack");
     [SerializeField] private float _speed;
 
     void Start()
@@ -27,14 +26,12 @@ public class GhostScript : MonoBehaviour
 
     void Update()
     {
-        STATUS();
         GRAVITY();
 
         if(!PlayerStatus.ContainsValue( true ))
         {
             MOVE();
             PlayerAttack();
-/*            HandleJumpInput();*/
             CheckJumpLand();
         }
         else if(PlayerStatus.ContainsValue( true ))
@@ -64,11 +61,6 @@ public class GhostScript : MonoBehaviour
         {Attack, false },
         {Surprised, false },
     };
-    //------------------------------
-    private void STATUS ()
-    {
-
-    }
 
     // play a animation of Attack
     private void PlayerAttack()
@@ -97,21 +89,6 @@ public class GhostScript : MonoBehaviour
 
             _ctr.Move(_move_direction * Time.deltaTime);
         }
-    }
-
-
-    //---------------------------------------------------------------------
-    // whether it is grounded
-    //---------------------------------------------------------------------
-    private bool CheckGrounded()
-    {
-        if (_ctr.isGrounded && _ctr.enabled)
-            return true;
-        
-        Ray ray = new Ray(this.transform.position + Vector3.up * 0.1f, Vector3.down);
-        float range = 0.2f;
-        
-        return Physics.Raycast(ray, range);
     }
 
     //---------------------------------------------------------------------
@@ -164,10 +141,7 @@ public class GhostScript : MonoBehaviour
     private void KEY_DOWN ()
     {
         if (Input.GetKeyDown(KeyCode.W))
-        {
-            Debug.Log("Key Down Detected");
             _animator.CrossFade(_move_state, 0.1f, 0, 0);
-        }
         else if (Input.GetKeyDown(KeyCode.S))
             _animator.CrossFade(_move_state, 0.1f, 0, 0);
         else if (Input.GetKeyDown(KeyCode.A))
@@ -179,13 +153,14 @@ public class GhostScript : MonoBehaviour
             _speed += 20f;
             _animator.CrossFade(_move_state, 0.1f, 0, 0);
         }
-        else if (Input.GetKeyDown(KeyCode.Space) && CheckGrounded())
+        else if (Input.GetButtonDown("Jump") && CheckGrounded())
         {
             _is_jumping = true;
             _move_direction.y = Mathf.Sqrt(2.0f * _jump_force * _gravity);
 
             _animator.CrossFade(_surprised_state, 0.1f, 0, 0);
         }
+
     }
 
     //---------------------------------------------------------------------
@@ -196,9 +171,7 @@ public class GhostScript : MonoBehaviour
         if (Input.GetKeyUp(KeyCode.W))
         {
             if (!Input.GetKey(KeyCode.DownArrow) && !Input.GetKey(KeyCode.LeftArrow) && !Input.GetKey(KeyCode.RightArrow))
-            {
                 _animator.CrossFade(_idle_state, 0.1f, 0, 0);
-            }
         }
         else if (Input.GetKeyUp(KeyCode.S))
         {
@@ -230,11 +203,18 @@ public class GhostScript : MonoBehaviour
             }
         }
     }
-        
-/*    private void HandleJumpInput()
-    {
 
-    }*/
+    private bool CheckGrounded()
+    {
+        if (_ctr.isGrounded && _ctr.enabled)
+            return true;
+
+        Ray ray = new Ray(this.transform.position + Vector3.up * 0.1f, Vector3.down);
+        float range = 0.2f;
+
+        return Physics.Raycast(ray, range);
+    }
+
 
     private void CheckJumpLand()
     {
