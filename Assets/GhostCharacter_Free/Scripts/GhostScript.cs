@@ -22,10 +22,20 @@ public class GhostScript : MonoBehaviour
     {
         _animator = this.GetComponent<Animator>();
         _ctr = GetComponent<CharacterController>();
+        GameState.Stamina = 1f;
+        GameState.ChackPointCoord = this.transform.position;
     }
 
     void Update()
     {
+        if (Input.GetKey(KeyCode.LeftShift) && GameState.Stamina > 0)
+            GameState.Stamina -= 0.1f * Time.deltaTime;
+        else if (GameState.Stamina < 1)
+        {
+            GameState.Stamina += 0.1f * Time.deltaTime;
+            _speed = 15;
+        }
+
         GRAVITY();
 
         if(!PlayerStatus.ContainsValue( true ))
@@ -160,7 +170,10 @@ public class GhostScript : MonoBehaviour
 
             _animator.CrossFade(_surprised_state, 0.1f, 0, 0);
         }
-
+        else if(Input.GetKeyDown(KeyCode.R))
+        {
+            this.transform.position = GameState.ChackPointCoord;
+        }
     }
 
     //---------------------------------------------------------------------
@@ -220,5 +233,15 @@ public class GhostScript : MonoBehaviour
     {
         if (_is_jumping && CheckGrounded())
             _is_jumping = false;
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.tag == "Respawn")
+        {
+            GameState.ChackPointCoord = other.transform.position;
+        }
+        else if (other.gameObject.tag == "Floor")
+            KEY_DOWN();
     }
 }
