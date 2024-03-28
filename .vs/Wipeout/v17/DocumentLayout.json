@@ -3,12 +3,28 @@
   "WorkspaceRootPath": "C:\\My resources\\Work\\Unity\\Wipeout\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{ABDCA02B-FB7E-C490-F7B2-F4A61B54B52D}|Assembly-CSharp.csproj|c:\\my resources\\work\\unity\\wipeout\\assets\\scripts\\checkpointscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ABDCA02B-FB7E-C490-F7B2-F4A61B54B52D}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\checkpointscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{ABDCA02B-FB7E-C490-F7B2-F4A61B54B52D}|Assembly-CSharp.csproj|c:\\my resources\\work\\unity\\wipeout\\assets\\scripts\\settingsscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ABDCA02B-FB7E-C490-F7B2-F4A61B54B52D}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\settingsscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABDCA02B-FB7E-C490-F7B2-F4A61B54B52D}|Assembly-CSharp.csproj|c:\\my resources\\work\\unity\\wipeout\\assets\\easyfpscounter\\scripts\\easyfps.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ABDCA02B-FB7E-C490-F7B2-F4A61B54B52D}|Assembly-CSharp.csproj|solutionrelative:assets\\easyfpscounter\\scripts\\easyfps.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABDCA02B-FB7E-C490-F7B2-F4A61B54B52D}|Assembly-CSharp.csproj|C:\\My resources\\Work\\Unity\\Wipeout\\assets\\scripts\\buttonsscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ABDCA02B-FB7E-C490-F7B2-F4A61B54B52D}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\buttonsscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABDCA02B-FB7E-C490-F7B2-F4A61B54B52D}|Assembly-CSharp.csproj|C:\\My resources\\Work\\Unity\\Wipeout\\assets\\scripts\\pausescript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ABDCA02B-FB7E-C490-F7B2-F4A61B54B52D}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\pausescript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{ABDCA02B-FB7E-C490-F7B2-F4A61B54B52D}|Assembly-CSharp.csproj|C:\\My resources\\Work\\Unity\\Wipeout\\assets\\ghostcharacter_free\\scripts\\ghostscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{ABDCA02B-FB7E-C490-F7B2-F4A61B54B52D}|Assembly-CSharp.csproj|solutionrelative:assets\\ghostcharacter_free\\scripts\\ghostscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABDCA02B-FB7E-C490-F7B2-F4A61B54B52D}|Assembly-CSharp.csproj|C:\\My resources\\Work\\Unity\\Wipeout\\assets\\scripts\\checkpointscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ABDCA02B-FB7E-C490-F7B2-F4A61B54B52D}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\checkpointscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{ABDCA02B-FB7E-C490-F7B2-F4A61B54B52D}|Assembly-CSharp.csproj|C:\\My resources\\Work\\Unity\\Wipeout\\assets\\scripts\\daysystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -34,11 +50,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 8,
               "Title": "GameState.cs",
               "DocumentMoniker": "C:\\My resources\\Work\\Unity\\Wipeout\\Assets\\Scripts\\GameState.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\GameState.cs",
@@ -51,7 +67,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 7,
               "Title": "CameraScript.cs",
               "DocumentMoniker": "C:\\My resources\\Work\\Unity\\Wipeout\\Assets\\Scripts\\CameraScript.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\CameraScript.cs",
@@ -64,20 +80,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "GhostScript.cs",
               "DocumentMoniker": "C:\\My resources\\Work\\Unity\\Wipeout\\Assets\\GhostCharacter_Free\\Scripts\\GhostScript.cs",
               "RelativeDocumentMoniker": "Assets\\GhostCharacter_Free\\Scripts\\GhostScript.cs",
               "ToolTip": "C:\\My resources\\Work\\Unity\\Wipeout\\Assets\\GhostCharacter_Free\\Scripts\\GhostScript.cs",
               "RelativeToolTip": "Assets\\GhostCharacter_Free\\Scripts\\GhostScript.cs",
-              "ViewState": "AQIAAN8AAAAAAAAAAAAAAPYAAAABAAAA",
+              "ViewState": "AQIAAKwAAAAAAAAAAAAAAPYAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-02-21T18:01:33.785Z",
               "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 9,
               "Title": "StaminaIndicator.cs",
               "DocumentMoniker": "C:\\My resources\\Work\\Unity\\Wipeout\\Assets\\Scripts\\StaminaIndicator.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\StaminaIndicator.cs",
@@ -90,7 +106,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
               "Title": "DaySystem.cs",
               "DocumentMoniker": "C:\\My resources\\Work\\Unity\\Wipeout\\Assets\\Scripts\\DaySystem.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\DaySystem.cs",
@@ -103,7 +119,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 5,
               "Title": "CheckPointScript.cs",
               "DocumentMoniker": "C:\\My resources\\Work\\Unity\\Wipeout\\Assets\\Scripts\\CheckPointScript.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\CheckPointScript.cs",
@@ -112,6 +128,60 @@
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAtAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-14T19:13:02.961Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "PauseScript.cs",
+              "DocumentMoniker": "C:\\My resources\\Work\\Unity\\Wipeout\\Assets\\Scripts\\PauseScript.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\PauseScript.cs",
+              "ToolTip": "C:\\My resources\\Work\\Unity\\Wipeout\\Assets\\Scripts\\PauseScript.cs",
+              "RelativeToolTip": "Assets\\Scripts\\PauseScript.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-28T18:37:50.15Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "SettingsScript.cs",
+              "DocumentMoniker": "C:\\My resources\\Work\\Unity\\Wipeout\\Assets\\Scripts\\SettingsScript.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\SettingsScript.cs",
+              "ToolTip": "C:\\My resources\\Work\\Unity\\Wipeout\\Assets\\Scripts\\SettingsScript.cs",
+              "RelativeToolTip": "Assets\\Scripts\\SettingsScript.cs",
+              "ViewState": "AQIAAC0AAAAAAAAAAAAAADwAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-28T18:21:28.827Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ButtonsScript.cs",
+              "DocumentMoniker": "C:\\My resources\\Work\\Unity\\Wipeout\\Assets\\Scripts\\ButtonsScript.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\ButtonsScript.cs",
+              "ToolTip": "C:\\My resources\\Work\\Unity\\Wipeout\\Assets\\Scripts\\ButtonsScript.cs",
+              "RelativeToolTip": "Assets\\Scripts\\ButtonsScript.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-28T19:19:33.401Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "EasyFps.cs",
+              "DocumentMoniker": "C:\\My resources\\Work\\Unity\\Wipeout\\Assets\\EasyFpsCounter\\Scripts\\EasyFps.cs",
+              "RelativeDocumentMoniker": "Assets\\EasyFpsCounter\\Scripts\\EasyFps.cs",
+              "ToolTip": "C:\\My resources\\Work\\Unity\\Wipeout\\Assets\\EasyFpsCounter\\Scripts\\EasyFps.cs",
+              "RelativeToolTip": "Assets\\EasyFpsCounter\\Scripts\\EasyFps.cs",
+              "ViewState": "AQIAACoAAAAAAAAAAAAAAIcAAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-28T21:26:12.478Z",
               "IsPinned": true,
               "EditorCaption": ""
             },
