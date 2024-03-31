@@ -7,28 +7,32 @@
       "RelativeMoniker": "D:0:0:{ABDCA02B-FB7E-C490-F7B2-F4A61B54B52D}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\settingsscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{ABDCA02B-FB7E-C490-F7B2-F4A61B54B52D}|Assembly-CSharp.csproj|c:\\my resources\\work\\unity\\wipeout\\assets\\easyfpscounter\\scripts\\easyfps.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{ABDCA02B-FB7E-C490-F7B2-F4A61B54B52D}|Assembly-CSharp.csproj|C:\\My resources\\Work\\Unity\\Wipeout\\assets\\easyfpscounter\\scripts\\easyfps.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{ABDCA02B-FB7E-C490-F7B2-F4A61B54B52D}|Assembly-CSharp.csproj|solutionrelative:assets\\easyfpscounter\\scripts\\easyfps.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ABDCA02B-FB7E-C490-F7B2-F4A61B54B52D}|Assembly-CSharp.csproj|C:\\My resources\\Work\\Unity\\Wipeout\\assets\\scripts\\buttonsscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ABDCA02B-FB7E-C490-F7B2-F4A61B54B52D}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\buttonsscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ABDCA02B-FB7E-C490-F7B2-F4A61B54B52D}|Assembly-CSharp.csproj|C:\\My resources\\Work\\Unity\\Wipeout\\assets\\scripts\\pausescript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ABDCA02B-FB7E-C490-F7B2-F4A61B54B52D}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\pausescript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ABDCA02B-FB7E-C490-F7B2-F4A61B54B52D}|Assembly-CSharp.csproj|C:\\My resources\\Work\\Unity\\Wipeout\\assets\\ghostcharacter_free\\scripts\\ghostscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ABDCA02B-FB7E-C490-F7B2-F4A61B54B52D}|Assembly-CSharp.csproj|solutionrelative:assets\\ghostcharacter_free\\scripts\\ghostscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{ABDCA02B-FB7E-C490-F7B2-F4A61B54B52D}|Assembly-CSharp.csproj|C:\\My resources\\Work\\Unity\\Wipeout\\assets\\scripts\\checkpointscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{ABDCA02B-FB7E-C490-F7B2-F4A61B54B52D}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\checkpointscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{ABDCA02B-FB7E-C490-F7B2-F4A61B54B52D}|Assembly-CSharp.csproj|C:\\My resources\\Work\\Unity\\Wipeout\\assets\\scripts\\pausescript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ABDCA02B-FB7E-C490-F7B2-F4A61B54B52D}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\pausescript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{ABDCA02B-FB7E-C490-F7B2-F4A61B54B52D}|Assembly-CSharp.csproj|C:\\My resources\\Work\\Unity\\Wipeout\\assets\\scripts\\daysystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{ABDCA02B-FB7E-C490-F7B2-F4A61B54B52D}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\daysystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABDCA02B-FB7E-C490-F7B2-F4A61B54B52D}|Assembly-CSharp.csproj|C:\\My resources\\Work\\Unity\\Wipeout\\assets\\scripts\\staminaindicator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ABDCA02B-FB7E-C490-F7B2-F4A61B54B52D}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\staminaindicator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABDCA02B-FB7E-C490-F7B2-F4A61B54B52D}|Assembly-CSharp.csproj|C:\\My resources\\Work\\Unity\\Wipeout\\assets\\ghostcharacter_free\\scripts\\ghostscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ABDCA02B-FB7E-C490-F7B2-F4A61B54B52D}|Assembly-CSharp.csproj|solutionrelative:assets\\ghostcharacter_free\\scripts\\ghostscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABDCA02B-FB7E-C490-F7B2-F4A61B54B52D}|Assembly-CSharp.csproj|C:\\My resources\\Work\\Unity\\Wipeout\\assets\\scripts\\buttonsscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ABDCA02B-FB7E-C490-F7B2-F4A61B54B52D}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\buttonsscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{ABDCA02B-FB7E-C490-F7B2-F4A61B54B52D}|Assembly-CSharp.csproj|C:\\My resources\\Work\\Unity\\Wipeout\\assets\\scripts\\camerascript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -37,10 +41,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{ABDCA02B-FB7E-C490-F7B2-F4A61B54B52D}|Assembly-CSharp.csproj|C:\\My resources\\Work\\Unity\\Wipeout\\assets\\scripts\\gamestate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{ABDCA02B-FB7E-C490-F7B2-F4A61B54B52D}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamestate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ABDCA02B-FB7E-C490-F7B2-F4A61B54B52D}|Assembly-CSharp.csproj|C:\\My resources\\Work\\Unity\\Wipeout\\assets\\scripts\\staminaindicator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ABDCA02B-FB7E-C490-F7B2-F4A61B54B52D}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\staminaindicator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -54,7 +54,7 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "GameState.cs",
               "DocumentMoniker": "C:\\My resources\\Work\\Unity\\Wipeout\\Assets\\Scripts\\GameState.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\GameState.cs",
@@ -67,7 +67,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "CameraScript.cs",
               "DocumentMoniker": "C:\\My resources\\Work\\Unity\\Wipeout\\Assets\\Scripts\\CameraScript.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\CameraScript.cs",
@@ -80,20 +80,21 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "GhostScript.cs",
               "DocumentMoniker": "C:\\My resources\\Work\\Unity\\Wipeout\\Assets\\GhostCharacter_Free\\Scripts\\GhostScript.cs",
               "RelativeDocumentMoniker": "Assets\\GhostCharacter_Free\\Scripts\\GhostScript.cs",
               "ToolTip": "C:\\My resources\\Work\\Unity\\Wipeout\\Assets\\GhostCharacter_Free\\Scripts\\GhostScript.cs",
               "RelativeToolTip": "Assets\\GhostCharacter_Free\\Scripts\\GhostScript.cs",
-              "ViewState": "AQIAAKwAAAAAAAAAAAAAAPYAAAABAAAA",
+              "ViewState": "AQIAAN8AAAAAAAAAAAAAAO0AAAAfAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-02-21T18:01:33.785Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 5,
               "Title": "StaminaIndicator.cs",
               "DocumentMoniker": "C:\\My resources\\Work\\Unity\\Wipeout\\Assets\\Scripts\\StaminaIndicator.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\StaminaIndicator.cs",
@@ -102,11 +103,12 @@
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-09T17:43:20.658Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 4,
               "Title": "DaySystem.cs",
               "DocumentMoniker": "C:\\My resources\\Work\\Unity\\Wipeout\\Assets\\Scripts\\DaySystem.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\DaySystem.cs",
@@ -115,20 +117,22 @@
               "ViewState": "AQIAAAAAAAAAAAAAAAAAACYAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-09T18:39:29.6Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 2,
               "Title": "CheckPointScript.cs",
               "DocumentMoniker": "C:\\My resources\\Work\\Unity\\Wipeout\\Assets\\Scripts\\CheckPointScript.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\CheckPointScript.cs",
               "ToolTip": "C:\\My resources\\Work\\Unity\\Wipeout\\Assets\\Scripts\\CheckPointScript.cs",
               "RelativeToolTip": "Assets\\Scripts\\CheckPointScript.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAtAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAtAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-14T19:13:02.961Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -141,7 +145,8 @@
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-28T18:37:50.15Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -151,7 +156,7 @@
               "RelativeDocumentMoniker": "Assets\\Scripts\\SettingsScript.cs",
               "ToolTip": "C:\\My resources\\Work\\Unity\\Wipeout\\Assets\\Scripts\\SettingsScript.cs",
               "RelativeToolTip": "Assets\\Scripts\\SettingsScript.cs",
-              "ViewState": "AQIAAC0AAAAAAAAAAAAAADwAAAABAAAA",
+              "ViewState": "AQIAACoAAAAAAAAAAAAAAD8AAAA4AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-28T18:21:28.827Z",
               "IsPinned": true,
@@ -159,7 +164,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 7,
               "Title": "ButtonsScript.cs",
               "DocumentMoniker": "C:\\My resources\\Work\\Unity\\Wipeout\\Assets\\Scripts\\ButtonsScript.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\ButtonsScript.cs",
@@ -179,7 +184,7 @@
               "RelativeDocumentMoniker": "Assets\\EasyFpsCounter\\Scripts\\EasyFps.cs",
               "ToolTip": "C:\\My resources\\Work\\Unity\\Wipeout\\Assets\\EasyFpsCounter\\Scripts\\EasyFps.cs",
               "RelativeToolTip": "Assets\\EasyFpsCounter\\Scripts\\EasyFps.cs",
-              "ViewState": "AQIAACoAAAAAAAAAAAAAAIcAAAAdAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAEIAAAACAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-28T21:26:12.478Z",
               "IsPinned": true,

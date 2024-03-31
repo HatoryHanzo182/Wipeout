@@ -130,7 +130,7 @@ public class EasyFps : MonoBehaviour {
                 }
                 else
                 {
-                    txt.text = MaxFrameRate + "+";
+                    txt.text = MaxFrameRate + "fps";
                 }
             }
             frameCounter = 0;
