@@ -239,9 +239,8 @@ public class GhostScript : MonoBehaviour
     {
         if (other.gameObject.tag == "Respawn")
         {
+            Debug.Log(other.gameObject.tag);
             GameState.ChackPointCoord = other.transform.position;
         }
-        else if (other.gameObject.tag == "Floor")
-            KEY_DOWN();
     }
 }

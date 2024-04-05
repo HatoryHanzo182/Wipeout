@@ -65,8 +65,11 @@
     <Compile Include="Assets\Water Float\Demo\Standard Assets\Editor\Water\Water4\WaterBaseEditor.cs" />
     <Compile Include="Assets\Water Float\Demo\Standard Assets\Editor\Water\Water4\PlanarReflectionEditor.cs" />
     <Compile Include="Assets\Water Float\Demo\Standard Assets\Editor\CrossPlatformInput\CrossPlatformInputInitialize.cs" />
+    <Compile Include="Assets\Conifers [BOTD]\Render Pipeline Support\Built-in RP\CTI Runtime Components\Scripts\Editor\CTI_DetailsEnum.cs" />
     <Compile Include="Assets\EasyFpsCounter\Editor\EasyFpsEditor.cs" />
     <Compile Include="Assets\EasyFpsCounter\Editor\EasyFpsManager.cs" />
+    <Compile Include="Assets\Conifers [BOTD]\Render Pipeline Support\Built-in RP\CTI Runtime Components\Scripts\Editor\CTI_ShaderGUI.cs" />
+    <Compile Include="Assets\Conifers [BOTD]\Render Pipeline Support\Built-in RP\CTI Runtime Components\Scripts\Editor\CTI_AdvancedEdgeFluttering.cs" />
     <Compile Include="Assets\Water Float\Editor\WF_Inspector.cs" />
   </ItemGroup>
   <ItemGroup>
