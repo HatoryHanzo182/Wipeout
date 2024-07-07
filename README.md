@@ -1,4 +1,4 @@
-Wipeout
+###Wipeout
 
 A platformer in which the player's main task is to jump as high as possible on platforms, avoiding obstacles and collecting bonuses. 
 The player controls a character that automatically moves up the screen. To progress further, you need to precisely time and tap on the screen to jump so that the character can 
